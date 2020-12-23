@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% block head %}{% endblock %}
+
+    </head>
+    <body>
+        <div class="buttons">
+            <button onclick="window.location.href='http://127.0.0.1:5000/sunday'">
+                Sunday
+            </button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/monday'">
+                Monday
+            </button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/tuesday'">
+                Tuesday
+            </button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/wednesday'">
+                Wednesday
+            </button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/thursday'">
+                Thursday
+            </button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/friday'">
+                Friday
+            </button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/saturday'">
+                Saturday
+            </button>
+        </div>
+        <div class="homeLink">
+            <a href="http://127.0.0.1:5000/">Exercises</a>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
