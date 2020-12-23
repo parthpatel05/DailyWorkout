@@ -27,9 +27,17 @@ p.link {
     color:black;
   }
 
-a {
+a.linkHome {
     text-decoration: none;
     font-size: 500%;
+    color:black;
+    background-color: red;
+    margin: auto;
+}
+
+a.utube {
+    text-decoration: none;
+    font-size: 200%;
     color:black;
     background-color: red;
     margin: auto;
